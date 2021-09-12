@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
   totalActive = 0;
   totalDeaths = 0;
   totalRecovered = 0;
+  totalIndiaConfirmed = 0;
+  totalIndiaActive = 0;
+  totalIndiaDeaths = 0;
+  totalIndiaRecovered = 0;
   loading = true;
   globalData: GlobalDataSummary[];
   datatable = [];
@@ -45,7 +49,7 @@ export class HomeComponent implements OnInit {
       .subscribe(
         {
           next: (result) => {
-            console.log(result);
+          //  console.log(result);
             this.globalData = result;
             result.forEach(cs => {
               if (!Number.isNaN(cs.confirmed)) {
@@ -53,10 +57,19 @@ export class HomeComponent implements OnInit {
                 this.totalConfirmed += cs.confirmed
                 this.totalDeaths += cs.deaths
                 this.totalRecovered += cs.active
+
               }
 
             })
-
+            result.filter(cs => {
+            if (!Number.isNaN(cs.confirmed)&& (cs.country =="India")) {
+              // console.log(cs)
+               this.totalIndiaActive += cs.active
+               this.totalIndiaConfirmed += cs.confirmed
+               this.totalIndiaDeaths += cs.deaths
+               this.totalIndiaRecovered += cs.active
+             }
+            })
             this.initChart('c');
           },
           complete : ()=>{
@@ -97,7 +110,7 @@ export class HomeComponent implements OnInit {
             cs.country, value
           ])
     })
-    console.log(this.datatable);
+   // console.log(this.datatable);
 
   }
 
