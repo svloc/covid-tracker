@@ -1,0 +1,273 @@
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>Covid-Tools</li>
+    <li>Login</li>
+  </ul>
+</nav>
+<div class=" row">
+      <div class="col-6 chart-wrap">
+        <h1>World Data</h1>
+        <div class=" row cases-stat">
+          <div class="cases-number">
+           <h4>Confirmed</h4>
+           <p>{{totalConfirmed}}</p>
+          </div>
+          <div class="cases-number">
+          <h4>Recovered</h4>
+          <p>{{totalRecovered}}</p>
+         </div>
+        <div class="cases-number">
+         <h4>Deaths</h4>
+         <p>{{totalDeaths}}</p>
+        </div>
+        <div class="cases-number">
+         <h4>Active</h4>
+         <p>{{totalActive}}</p>
+        </div>
+       </div>
+
+       <h1>India Data</h1>
+       <div class=" row cases-stat">
+         <div class="cases-number">
+          <h4>Confirmed</h4>
+          <p>{{totalConfirmed}}</p>
+         </div>
+         <div class="cases-number">
+         <h4>Recovered</h4>
+         <p>{{totalRecovered}}</p>
+        </div>
+       <div class="cases-number">
+        <h4>Deaths</h4>
+        <p>{{totalDeaths}}</p>
+       </div>
+       <div class="cases-number">
+        <h4>Active</h4>
+        <p>{{totalActive}}</p>
+       </div>
+      </div>
+
+      </div>
+        <div class="col-6">
+          <div class="input-wrap">
+            <label for="fruit">Select Case Type : </label>
+            <input type="radio"  value="c" #c (click)='updateChart(c)' id='c' name="casetype" checked="" tabindex="0" class="hidden">
+            <label for='c'>Confirmed</label>
+
+            <input type="radio" value='d' #d (click)='updateChart(d)' id='d' name="casetype" tabindex="0" class="hidden">
+            <label for='d'>Deaths</label>
+
+            <input type="radio" value='r' #r (click)='updateChart(r)' id='r' name="casetype" tabindex="0" class="hidden">
+            <label for='r'>Recovered</label>
+
+            <input type="radio" value='a' #a (click)='updateChart(a)' id='a' name="casetype" tabindex="0" class="hidden">
+            <label for='a'>Active</label>
+
+          <google-chart [type]='chart.PieChart' [options]='chart.options' style="width: 100%;" [height]='chart.height' [data]='datatable'></google-chart>
+        </div>
+      </div>
+
+
+    <!-- <div class="col-6 chart-img">
+      <img class="images" src="assets/img/home-img.png">
+    </div> -->
+    </div>
+
+
+<div class="row row-1">
+        <div class="col-6 ">
+           <img class="images" src="assets/img/work-home-3.jpg">
+        </div>
+         <div class="col-6">
+           <h2>Work From Home</h2>
+           <p>COVID-19 has caused remote work to become a necessity instead of a luxury for many professionals.</p>
+           <h2>How to Work From Home</h2>
+            <ul>
+              <li>Take clear breaks.</li>
+              <li>Talk to your employer.</li>
+              <li>Join a remote-friendly company.</li>
+              <li>Start a home business.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="protect-heading">Take Step To Protect Yourself</h2>
+    <p class="protect-text">If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. Do it all!</p>
+
+    <div class="row protect-row">
+         <div class="col-4">
+           <div class="protect-img-wrap">
+            <img class="protect-img"  src="assets/img/protect-1.png" alt="protect-img"/>
+           </div>
+          <div class="card-body">
+            <h3 class="card-title">Wear a Face Mask </h3>
+            <p class="card-text">Wearing a mask is not only important, it’s life-saving. <br> By wearing a mask You are Stopping the Spread and Protecting others. </p>
+          </div>
+            </div>
+         <div class="col-4">
+          <div class="protect-img-wrap">
+            <img class="protect-img"  src="assets/img/protect-2.png" alt="protect-img"/>
+           </div>
+               <div class="card-body">
+                 <h3 class="card-title">Wash Your Hands</h3>
+                 <p class="card-text">Don't be dirty, be neat. Wash your hands before you eat. Don't lick, germs stick. Don't spread germs wash your hands.</p>
+             </div>
+         </div>
+
+         <div class="col-4">
+          <div class="protect-img-wrap">
+            <img class="protect-img"  src="assets/img/protect-3.png" alt="protect-img"/>
+           </div>
+              <div class="card-body">
+                <h3 class="card-title">Avoid Close Contact</h3>
+                <p class="card-text">Avoid close contact with people who are sick. If possible, maintain 6 feet between the person who is sick and other household members.</p>
+              </div>
+            </div>
+</div>
+
+
+
+
+
+  <div class ="row row-vaccinate">
+       <div class="col-6 col-6-vaccinate">
+          <h2 class="vaccine-heading">Time To Vaccinate</h2>
+          <p class="vaccine-text">Vaccination is the most important part of a family and public health. It prevents the spread of contagious, dangerous, and deadly diseases. According to the World Health Organisation, vaccination is a proven tool for controlling and eliminating life-threatening infectious diseases.</p><br>
+          <p class="vaccine-text">According to WHO, Immunization is a proven tool for controlling and eliminating life-threatening infectious diseases and is estimated to avert between 2 and 3 million deaths each year but an estimated 18.7 million infants worldwide are still missing out on basic vaccines</p>
+        </div>
+        <div class="col-6">
+         <img class="images" src="assets/img/vaccinate1.jpg">
+        </div>
+
+  </div>
+
+
+
+    <h3 class="protect-heading">What Are The Main Symptoms</h3>
+    <p class="protect-text">COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+    <div class="row row-symptom">
+      <div class="col-6">
+        <div>
+           <h2>Most Common Symptoms</h2>
+           <ul>
+             <li>Fever</li>
+             <li>Tiredness</li>
+             <li>Dry Cough</li>
+           </ul>
+          <h2 >Less Common Symptoms</h2>
+           <ul>
+             <li>Sore Throat</li>
+             <li>Aches And Pains</li>
+             <li>Shortness Of Breath</li>
+             <li>Loss of Taste or Smell</li>
+           </ul>
+           <h2 >Serious Symptoms</h2>
+           <ul>
+             <li>Difficulty Breathing </li>
+             <li>Chest Pain or Pressure</li>
+             <li>Loss of Speech or Movement</li>
+           </ul>
+         </div>
+      </div>
+      <div class="col-6 col-6-symptom">
+          <img class="images" src="assets/img/symptoms-img.png">
+      </div>
+    </div>
+
+
+    <div class="row row-1">
+      <div class="col-6 todo-not-img">
+        <img class="images" src="assets/img/dont-img.png">
+      </div>
+      <div class="col-6">
+        <h2>Thing Not To Do During Covid</h2>
+        <p>Say and Do something Positive that will help the situation; it doesn’t take any Brains to Complain</p>
+        <ul>
+          <li>Do Not Touch Your Face or Nose</li>
+          <li>Do Not Contact Sick Person </li>
+          <li>Do Not have visitor to Your Home including Friend and Family</li>
+        </ul>
+     </div>
+    </div>
+
+
+   <div class="row row-1 row-todo">
+      <div class="col-6">
+        <h2 >Thing To  DO  During Covid</h2>
+        <p>Be open to adjustments. There's nothing about this current moment in history that allows for stubbornness.</p>
+        <ul>
+          <li>Wash Your Hand For 20 Sec</li>
+          <li>Wear A Mask</li>
+          <li>Seek Medical Care Regularly</li>
+        </ul>
+      </div>
+      <div class="col-6 todo-img">
+        <img class="images" src="assets/img/do-img.png">
+      </div>
+   </div>
+
+
+    <h3 class="protect-heading">How To Wash Your Hand Properly</h3>
+
+    <div class="row row-wash">
+
+        <div class="card">
+          <img class="card-image"  src="assets/img/handwash-1.png">
+          <h4 class="card-title">Apply Soap On Hands</h4>
+         </div>
+
+
+         <div class="card ">
+           <img class="card-image" src="assets/img/handwash-2.png ">
+           <h4 class="card-title">Palm To Palm</h4>
+        </div>
+
+
+          <div class="card ">
+            <img class="card-image" src="assets/img/handwash-3.png">
+            <h4 class="card-title ">Between Fingers</h4>
+            </div>
+
+            <div class="card">
+              <img class="card-image" src="assets/img/handwash-4.png">
+              <h4 class="card-title text-center">Back Of The Hand</h4>
+              </div>
+             <div class="card">
+                <img class="card-image" src="assets/img/handwash-5.png">
+                <h4 class="card-title ">Clean With Water</h4>
+              </div>
+             <div class="card">
+                <img class="card-image" src="assets/img/handwash-6.png">
+                <h4 class="card-title ">Use Towel To Dry</h4>
+              </div>
+      </div>
+
+
+    <h2 class="protect-heading">How Covid-19  Spread  Over The World </h2>
+    <img class="images" src="assets/img/map.png" >
+
+
+  <footer>
+
+       <div class="row">
+         <div class="col-6">
+           <ul>
+               <li>Home</li>
+               <li>COVID-Tools</li>
+               <li>Login </li>
+             </ul>
+         </div>
+         <div class="col-6 ">
+ <ul>
+          <li ><i class="fab fa-facebook-square"></i></li>
+            <li ><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube-square"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-pinterest-square"></i></li>
+          </ul>
+        </div>
+</div>
+     <p>© 2021 Copyright:Corona-Tools</p>
+
+
+</footer>
