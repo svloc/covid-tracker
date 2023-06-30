@@ -1,26 +1,36 @@
-nav {
-  padding: 0.75em 1em;
-  margin: 0 auto;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: #dbebfa;
-  color: #00112c;
-  font-size: 1.3rem;
-  z-index: 10001;
+nav{
+  width :50%;
+  background-color:#371717;
+  color:#fff;
+  padding :1.5em 0.75em;
+  height:100vh;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
+.nav-brand{
+  color:red;
+  text-align :center;
 }
-nav li {
-  margin: 0 1em;
+.nav-list{
+  list-style:none;
 }
+li{
+  margin-bottom:0.5em;
+  padding:1em 2em;
+}
+li:hover,li:focus{
+  background-color:#000;
+  color:red;
+  border-top-right-radius:3rem;
+  border-bottom-right-radius:3rem;
+
+}
+
+@media (min-width:570px){
+  nav{
+    width:250px;
+  }
+}
+
+
 nav li:hover {
   color: #000;
   cursor: pointer;
@@ -66,8 +76,7 @@ nav li:hover {
 }
 .chart-wrap{
   text-align: center;
-  margin-top: 1.5em;
-
+  margin-top: 2.9em;
   padding-top: 2em;
 }
 .cases-stat {
@@ -221,6 +230,7 @@ transform: scale(1.05);
 }
 .input-wrap{
   text-align: center;
+  margin-top: 4.5em;
 }
 .input-wrap label{
   margin-right: 20px;
@@ -232,9 +242,6 @@ transform: scale(1.05);
   }
   .col-6 {
     width: 50%;
-  }
-  .row-chart{
-    display: -webkit-inline-box;
   }
   .protect-text {
     margin: 0 auto;

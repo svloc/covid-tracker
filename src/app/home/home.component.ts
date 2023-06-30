@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { GlobalDataSummary } from 'src/app/models/gloabl-data';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

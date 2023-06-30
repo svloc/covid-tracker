@@ -8,6 +8,7 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { MaterialModule } from "./material.module";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+
   ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

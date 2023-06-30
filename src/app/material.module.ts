@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
-
+import {InputTextModule} from 'primeng/inputtext';
 @NgModule({
   declarations: [],
   imports: [
@@ -15,13 +15,15 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    InputTextModule
   ],
   exports: [
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    InputTextModule
   ],
   providers: []
 })
